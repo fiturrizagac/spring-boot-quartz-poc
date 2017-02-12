@@ -14,7 +14,7 @@
         <org.springframework.boot.version>1.5.1.RELEASE</org.springframework.boot.version>
         <org.quartz-scheduler.version>2.2.3</org.quartz-scheduler.version>
         <org.springframework.version>4.3.6.RELEASE</org.springframework.version>
-        <com.h2database.version>1.4.193</com.h2database.version>
+        <org.mariadb.jdbc.version>1.5.7</org.mariadb.jdbc.version>
     </properties>
 
     <dependencies>
@@ -29,19 +29,20 @@
             <version>${org.springframework.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>${org.springframework.version}</version>
-        </dependency>
-        <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>${org.quartz-scheduler.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${com.h2database.version}</version>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>${org.mariadb.jdbc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>${org.springframework.boot.version}</version>
         </dependency>
 
     </dependencies>
